@@ -1,3 +1,5 @@
+export { }
+
 //https://www.hackerrank.com/challenges/array-left-rotation/problem
 /*A left rotation operation on an array of size shifts each of the array's elements unit to the left. Given an integer, 
 rotate the array that many steps left and return the result.  */
@@ -13,4 +15,5 @@ for(let i = 1; i <= d; i++){
 return arr
 }
 console.log('arr: ' + arrayLeftRotation(arr,4))
-//[LOG]: "arr: 5,1,2,3,4" 
+//[LOG]: "arr: 5,1,2,3,4"
+

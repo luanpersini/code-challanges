@@ -1,4 +1,11 @@
+export { }
 //ts-node solutions\array-filter-by-condition.ts
+//Filter an array of objects returning the values found based in the given conditions.
+const filter = {
+  address: 'England',
+  name: 'John'
+}
+
 const users = [
   {
     name: 'John',
@@ -32,15 +39,12 @@ const filterArrayOfObjects = (arrayToBeFiltered: any[], filterConditions: any) =
   return filteredItems
 }
 
-const filter = {
-  address: 'England',
-  name: 'John'
-}
 const result = filterArrayOfObjects(users, filter)
 console.log('result')
 console.log(result)
 // [ { name: 'John', email: 'tom@mail.com', address: 'England' } ]
 
+//---------------
 const filter2 = {
   address: '',
   name: 'John'
