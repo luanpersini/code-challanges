@@ -8,8 +8,7 @@ const arr: number[][] = [
   [ 0,  0,  1,  2, 4, 0]
 ]
 
-function hourglassSum(arr: number[][]) {
-  // Write your code here
+function hourglassSum(arr: number[][]) { 
   const lastRow = arr.length - 1
   const lastCol = arr[0].length - 1
   const lastStartRow = lastRow - 2

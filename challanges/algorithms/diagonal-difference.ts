@@ -5,8 +5,9 @@ const arr: number[][] = [
   [10, 8, -12]
 ]
 
-function diagonalSumDifference(arr: number[][]) {
+function diagonalDifference(arr: number[][]) {
   // the array is always a square (3x3, 4x4)
+  // sum the diagonals and return the difference
   const lastIndex = arr[0].length - 1
   const diagonal1 = []
   const diagonal2 = []
@@ -20,7 +21,7 @@ function diagonalSumDifference(arr: number[][]) {
   return difference
 }
 
-console.log(diagonalSumDifference(arr))
+console.log(diagonalDifference(arr))
 // result = 15
 //[ 11, 5, -12 ] = 4
 // [ 4, 5, 10 ] = 19
@@ -32,7 +33,7 @@ const arr2: number[][] = [
   [10, 8, -12, 5],
   [4, 5, 7, 12]
 ]
-console.log(diagonalSumDifference(arr2))
+console.log(diagonalDifference(arr2))
 // result = 4
 // [ 11, 5, -12, 12 ] = 16
 // [ 2, 6, 8, 4 ] = 20
